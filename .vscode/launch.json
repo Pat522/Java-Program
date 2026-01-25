@@ -1,0 +1,126 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SortingTreeMapByValuesUsingStreamApi",
+            "request": "launch",
+            "mainClass": "Map.SortingTreeMapByValuesUsingStreamApi",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "SortingByKey",
+            "request": "launch",
+            "mainClass": "Map.SortingByKey",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "HashMapExample",
+            "request": "launch",
+            "mainClass": "Map.HashMapExample",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "TreeMapExample",
+            "request": "launch",
+            "mainClass": "Map.TreeMapExample",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "LinkedHashMapExample",
+            "request": "launch",
+            "mainClass": "Map.LinkedHashMapExample",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "MyMap",
+            "request": "launch",
+            "mainClass": "Map.MyMap",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "MyTreeSet",
+            "request": "launch",
+            "mainClass": "Set.MyTreeSet",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "MyLinkedHashSet",
+            "request": "launch",
+            "mainClass": "Set.MyLinkedHashSet",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "MyHashSet",
+            "request": "launch",
+            "mainClass": "Set.MyHashSet",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "MyLinkedList",
+            "request": "launch",
+            "mainClass": "List.MyLinkedList",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "MyArrayList",
+            "request": "launch",
+            "mainClass": "List.MyArrayList",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "MapMethods",
+            "request": "launch",
+            "mainClass": "MapMethods",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "Occurances",
+            "request": "launch",
+            "mainClass": "Occurances",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "SortingTreeMapByValuesUsingStreamApi",
+            "request": "launch",
+            "mainClass": "SortingTreeMapByValuesUsingStreamApi",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "SortingTreeMapByValuesUsingArrayList",
+            "request": "launch",
+            "mainClass": "SortingTreeMapByValuesUsingArrayList",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "Sort",
+            "request": "launch",
+            "mainClass": "Sort",
+            "projectName": "Java Program_6c2faea8"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        }
+    ]
+}
