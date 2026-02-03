@@ -2,36 +2,23 @@ import java.util.*;
 
 public class FrequencyOfEveryMonth {
     public static void main(String[] args) {
-        List<String> months = new ArrayList<>(List.of(
-            "January", "February", "March", "April",
-            "May", "June", "July", "August",
-            "September", "October", "November", "December",
-            "January", "February", "March", "April", "May"
-        ));
+       List<String> months = List.of("Jan", "Feb", "Mar", "Jan", "Feb", "Apr", "Feb");
 
         // Manual HashMap
-        Map<String, Integer> frequencyMap1 = new HashMap<>();
+        Map<String, Integer> frequency = new HashMap<>();
         for (String month : months) {
-            if (frequencyMap1.containsKey(month)) {
-                frequencyMap1.put(month, frequencyMap1.get(month) + 1);
+            if (frequency.containsKey(month)) {
+                frequency.put(month, frequency.get(month) + 1);
             } else {
-                frequencyMap1.put(month, 1);
+                frequency.put(month, 1);
             }
         }
-        System.out.println("Manual HashMap: " + frequencyMap1);
-
-        // Using TreeMap (sorted)
-        Map<String, Integer> frequencyMapTree = new TreeMap<>();
-        for (String month : months) {
-            frequencyMapTree.put(month, frequencyMapTree.getOrDefault(month, 0) + 1);
-        }
-        System.out.println("TreeMap (sorted): " + frequencyMapTree);
+        System.out.println(frequency);
 
         // Stream API
          Map<String, Long> frequencyMap = new HashMap<>();
          months.stream().forEach(month -> 
-            frequencyMap.put(month, frequencyMap.getOrDefault(month, 0L) + 1)
-        );
-        System.out.println("Frequency map using stream + getOrDefault: " + frequencyMap); 
+            frequencyMap.put(month, frequencyMap.getOrDefault(month, 0L) + 1));
+        System.out.println(frequencyMap); 
     }
 }

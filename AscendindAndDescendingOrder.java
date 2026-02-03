@@ -2,21 +2,17 @@ import java.util.*;
 
 public class AscendindAndDescendingOrder {
     public static void main(String[] args) {
-    List<String> months = List.of(
-            "January", "February", "March", "April",
-            "May", "June", "July", "August",
-            "September", "October", "November", "December",
-            "January", "February", "March", "April", "May");
+    List<String> months = List.of("A", "B", "C", "A", "B");
 
     // Convert immutable List to mutable
-    List<String> monthList = new ArrayList<>(months);
+    List<String> orderMonths = new ArrayList<>(months);
 
     // Sort in ascending order
-    monthList.sort(Comparator.naturalOrder());       
-    for (String month : monthList) 
+    orderMonths.sort(Comparator.naturalOrder());       
+    for (String month : orderMonths) 
     System.out.println(month);
         
-    //Using Stream Api   
+    //Using Stream Api  
       months.stream()
       .sorted(Comparator.reverseOrder())
       .forEach(month -> System.out.println(month));

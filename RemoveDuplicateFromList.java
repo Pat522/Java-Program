@@ -2,25 +2,29 @@ import java.util.*;
 
 public class RemoveDuplicateFromList  {
     public static void main(String[] args) {
-        List<String> months = List.of(
-            "January", "February", "March", "April",
-            "May", "June", "July", "August",
-            "September", "October", "November", "December",
-            "January", "February", "March", "April", "May"
-        );
+        List<String> months = List.of("A","B","C","A","B" );
 
-        Set<String>removeDuplicate=new TreeSet<>(months);
-        System.out.println("Remove Duplicate months: " + removeDuplicate);
 
-        Set<String> seen = new HashSet<>();
+         //Dulicate Months
+        Set<String> duplicateMonth = new HashSet<>();
         Set<String> duplicates = new HashSet<>();
 
         for (String month : months) {
-            if (!seen.add(month)) { // if month is already in seen
+            if (!duplicateMonth.add(month)) { // if month is already in seen
                 duplicates.add(month);
             }
         }
         System.out.println("Duplicate months: " + duplicates);
+
+        //Unique Months
+        Set<String> uniqueMonth = new HashSet<>();
+        for(String month:months)
+        {
+            if(!duplicates.contains(month))
+                uniqueMonth.add(month);
+        }   
+        System.out.println("Unique months: " + uniqueMonth);
+       
     }
 }
 
